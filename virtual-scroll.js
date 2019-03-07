@@ -61,23 +61,3 @@ const virtualScroll = {
     }
 }
 
-new Vue({
-    el: "#app",
-    components: {
-        virtualScroll
-    },
-    created() {
-     
-        //建立個假資料
-        for (let i = 0; i < 30; i++) {
-            this.list.push({ value: i });
-        }
-    },
-    data: {
-        list: []
-    },
-    methods: {
-
-    }
-})
-
