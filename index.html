@@ -11,21 +11,5 @@
 		</virtual-scroll>
 	</template>
 </div>
-
-<script type="text/x-template" id="virtual-scroll">
-	<div class="list-view"
-		 @scroll="handleScroll">
-		<!-- 撐虛擬高 -->
-		<div :style="{
-         height: virtualHeight + 'px'
-      }" class="list-view-phantom"></div>
-
-		<!-- 內容物 -->
-		<div class="list-view-content">
-			<slot :data="virtuallist"></slot>
-		</div>
-
-	</div>
-</script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.8/vue.min.js"></script>
 <script type="text/javascript" src="virtual-scroll.js"></script>
