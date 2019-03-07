@@ -1,7 +1,21 @@
 const virtualScroll = {
     name: 'virtualScroll',
 
-    template: '#virtual-scroll',
+    template: `<div 
+    class="list-view" 
+    @scroll="handleScroll"
+    >
+    <!-- æ’è™›æ“¬é«˜ -->
+    <div :style="{
+         height: virtualHeight + 'px'
+      }" class="list-view-phantom"></div>
+
+     <!-- å…§å®¹ç‰© -->
+    <div class="list-view-content">
+    <slot :data="virtuallist"></slot>
+    </div>
+
+  </div>`,
     props: {
         data: {
             type: Array,
@@ -31,7 +45,7 @@ const virtualScroll = {
         this.virtuallist = this.data.slice(0, this.minCount);
     },
     mounted() {
-        //¸j¤W³]©wªº°ª
+        //ç¶ä¸Šè¨­å®šçš„é«˜
         for (let i = 0; i < this.$el.lastChild.children.length; i++) {
             this.$el.lastChild.children[i].style.height = this.minHeight + "px";
         }
@@ -54,7 +68,7 @@ new Vue({
     },
     created() {
      
-        //«Ø¥ß­Ó°²¸ê®Æ
+        //å»ºç«‹å€‹å‡è³‡æ–™
         for (let i = 0; i < 30; i++) {
             this.list.push({ value: i });
         }
