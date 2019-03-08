@@ -1,3 +1,7 @@
+# npm
+`npm i vue-virtual-scrolling`
+
+
 # Vue-virtual-scroll
 Vue virtual-scroll(虛擬卷軸功能實現) 拆分components可以做為套件使用
 
