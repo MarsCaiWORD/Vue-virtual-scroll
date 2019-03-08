@@ -1,5 +1,3 @@
 import virtualScroll from './virtualScroll.vue'
 
-export default {
-    virtualScroll
-}
+export default virtualScroll
