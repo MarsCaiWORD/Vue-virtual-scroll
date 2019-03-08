@@ -2,7 +2,7 @@
   "name": "vue-virtual-scrolling",
   "version": "1.0.0",
   "description": "Vue virtual-scrolling(虛擬卷軸功能實現) 拆分components可以做為套件使用",
-  "main": "virtualScroll.vue",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
