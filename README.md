@@ -4,6 +4,24 @@ Vue virtual-scroll(虛擬卷軸功能實現) 拆分components可以做為套件�
 # Demo
 https://jsfiddle.net/gary75952/2m8epjsb/22/
 
+
+# HOW TO WORK
+
+```import virtualScroll from "virtualScroll.vue";
+components: {
+virtualScroll
+}
+
+.Vue
+<virtual-scroll :data="list" :min-height="30" :min-count="5" style="height: 300px">
+            <template v-slot:default="slotProps">
+                <div v-for="(item,index) in slotProps.data">
+                    {{item.value}}
+                </div>
+            </template>
+ </virtual-scroll>```
+
+
 # Props
 `data`:(必要) 要顯示的list資料
 
