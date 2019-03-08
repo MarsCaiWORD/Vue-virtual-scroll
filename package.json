@@ -1,6 +1,6 @@
 {
   "name": "vue-virtual-scrolling",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Vue virtual-scrolling(虛擬卷軸功能實現) 拆分components可以做為套件使用",
   "main": "index.js",
   "scripts": {
