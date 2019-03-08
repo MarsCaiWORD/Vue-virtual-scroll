@@ -15,7 +15,8 @@ https://jsfiddle.net/gary75952/2m8epjsb/22/
 
 # HOW TO WORK
 
-```import virtualScroll from "virtualScroll.vue";
+```
+import virtualScroll from "virtualScroll.vue";
 components: {
 virtualScroll
 }
