@@ -1,0 +1,19 @@
+{
+  "name": "vue-virtual-scroll",
+  "version": "1.0.0",
+  "description": "Vue virtual-scroll(虛擬卷軸功能實現) 拆分components可以做為套件使用",
+  "main": "virtualScroll.vue",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarsCaiWORD/Vue-virtual-scroll.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarsCaiWORD/Vue-virtual-scroll/issues"
+  },
+  "homepage": "https://github.com/MarsCaiWORD/Vue-virtual-scroll#readme"
+}
