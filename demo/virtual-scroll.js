@@ -53,11 +53,10 @@ const virtualScroll = {
     methods: {
         handleScroll() {
             const scrollTop = this.$el.scrollTop;
-            let start = Math.ceil(scrollTop / this.minHeight);
+            let start = Math.floor(scrollTop / this.minHeight);
             let end = Math.ceil(((this.minHeight * this.minCount) + scrollTop) / this.minHeight);
             this.virtuallist = this.data.slice(start, end);
-            this.$el.lastChild.style.webkitTransform = `translate3d(0, ${scrollTop}px, 0)`;
+            this.$el.lastChild.style.webkitTransform = `translate3d(0, ${start * this.minHeight}px, 0)`;
         },
     }
 }
-

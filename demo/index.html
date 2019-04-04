@@ -1,36 +1,38 @@
 <link rel="stylesheet" type="text/css" href="virtual-scroll.css" />
 <div id="app">
-	<template>
-		<virtual-scroll :data="list" :min-height="30" :min-count="5">
-			<template v-slot:default="slotProps">
-				<div v-for="(item,index) in slotProps.data">
-					{{item.value}}
-				</div>
+    <template>
+        <virtual-scroll :data="list" :min-height="30" :min-count="5">
+            <template v-slot:default="slotProps">
+                <div v-for="(item,index) in slotProps.data">
+                    {{item.value}}
+                </div>
 
-			</template>
-		</virtual-scroll>
-	</template>
+            </template>
+        </virtual-scroll>
+    </template>
 </div>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.8/vue.min.js"></script>
 <script type="text/javascript" src="virtual-scroll.js"></script>
 <script>
-new Vue({
-    el: "#app",
-    components: {
-        virtualScroll
-    },
-    created() {
-     
-        //建立個假資料
-        for (let i = 0; i < 30; i++) {
-            this.list.push({ value: i });
-        }
-    },
-    data: {
-        list: []
-    },
-    methods: {
+    new Vue({
+        el: "#app",
+        components: {
+            virtualScroll
+        },
+        created() {
 
-    }
-})
+            //建立個假資料
+            for (let i = 0; i < 100000; i++) {
+                this.list.push({
+                    value: i
+                });
+            }
+        },
+        data: {
+            list: []
+        },
+        methods: {
+
+        }
+    })
 </script>
