@@ -3,18 +3,18 @@
 
 
 # Vue-virtual-scroll
-Vue virtual-scroll(虛擬卷軸功能實現) 拆分components可以做為套件使用
+Vue virtual-scroll Vue virtual-scroll Split components can be used 
 
 # Demo
 https://jsfiddle.net/gary75952/2m8epjsb/28/
 
 
 # Props
-`data`:(必要) 要顯示的list資料
+`data`:(required) List Data
 
-`minHeight`:(必要) 每筆資料的最小高度
+`minHeight`:(required) Each Data show min-Height
 
-`minCount`:(必要)要顯示渲染的數量
+`minCount`:(required) render Count
 
 
 # HOW TO WORK
